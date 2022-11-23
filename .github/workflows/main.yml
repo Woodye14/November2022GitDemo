@@ -10,7 +10,8 @@ jobs:
     - run: touch file.txt
     - run: cat file.txt 
     - run: echo "hello world"
-    - run: echo "this is text! >> file.txt
+    - run: echo "this is text!" >> file.txt
     - run: cat file.txt
     - run: ls -a
     - run: pwd
+    - run: echo "$USER"
