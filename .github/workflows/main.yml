@@ -10,7 +10,8 @@ jobs:
     - run: echo "hello world"
     - run: ls -a
     - run: pwd
-  
+touch file.txt
+
 echo "text" file.txt
 
 whoami
