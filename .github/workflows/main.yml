@@ -7,7 +7,10 @@ jobs:
     runs-on: abuntu-latest # creating a container (virtual machine) that uses abuntu
     
     steps:
+    - run: touch file.txt
+    - run: cat file.txt 
     - run: echo "hello world"
+    - run: echo "this is text! >> file.txt
+    - run: cat file.txt
     - run: ls -a
-    - run: touch test.txt
     - run: pwd
