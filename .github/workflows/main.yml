@@ -15,3 +15,12 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: echo "$USER"
+
+
+better_action:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v3
+  - run: chmod +x cool_script.sh
+  - run: ./cool_script.sh
+  
