@@ -11,7 +11,7 @@ jobs:
     - run: ls -a
     - run: pwd
 
-touch: file.txt
+touch file.txt
 
 echo "text" file.txt
 
