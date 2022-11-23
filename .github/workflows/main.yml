@@ -10,3 +10,7 @@ jobs:
     - run: echo "hello world"
     - run: ls -a
     - run: pwd
+  
+echo "text" file.txt
+
+whoami
