@@ -1,0 +1,12 @@
+name: Git Actions Demo
+
+on: [push]
+
+jobs:
+  actions_demo:
+    runs-on: abuntu-latest # creating a container (virtual machine) that uses abuntu
+    
+    steps:
+    - run: echo "hello world"
+    - run: ls -a
+    - run: pwd
