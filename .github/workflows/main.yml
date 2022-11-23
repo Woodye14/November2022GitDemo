@@ -2,6 +2,9 @@ name: Git Actions Demo
 
 on: [push]
 
+env:
+  app_name: C00l_4APP
+
 jobs:
   actions_demo:
     runs-on: abuntu-latest # creating a container (virtual machine) that uses abuntu
@@ -15,12 +18,24 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: echo "$USER"
+    - run: git clone https://github.com/Woodye14/November2022GitDemo/actions
 
 
 better_action:
   runs-on: ubuntu-latest
   steps:
+  - run: echo "heelo $name"
   - uses: actions/checkout@v3
   - run: chmod +x cool_script.sh
   - run: ./cool_script.sh
-  
+
+
+
+env_vars_job:
+  runs-on: unbuntu-latest
+  env:
+    name: Toni
+  steps:
+  -run: echo "hello world"
+  -run: echo "heelo $name"
+  -run: echo $app_name
